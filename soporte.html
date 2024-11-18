@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - Yokaflair</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .support-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .support-section {
+            margin-bottom: 30px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-question {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .contact-form {
+            display: grid;
+            gap: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #171a21;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Aquí puedes incluir el mismo encabezado que en tu página principal -->
+    </header>
+
+    <main class="support-container">
+        <h1>Centro de Soporte</h1>
+
+        <section class="support-section">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <p class="faq-question">¿Cómo puedo realizar un pedido?</p>
+                <p>Para realizar un pedido, simplemente navega por nuestra tienda, selecciona los productos que deseas y añádelos a tu carrito. Luego, procede al checkout para completar tu compra.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">¿Cuáles son las opciones de envío disponibles?</p>
+                <p>Ofrecemos envío estándar y express. Los tiempos de entrega varían según tu ubicación. Puedes ver las opciones específicas durante el proceso de checkout.</p>
+            </div>
+            <!-- Añade más preguntas frecuentes según sea necesario -->
+        </section>
+
+        <section class="support-section">
+            <h2>Contáctanos</h2>
+            <form class="contact-form" action="https://formsubmit.co/timanadani11@gmail.com" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="Nombre" required>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" required>
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" required>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+
+                <div id="message-sent" class="message-sent" style="display: none;">
+                    <p>El mensaje ha sido enviado correctamente.</p>
+                </div>
+
+                <input type="hidden" name="_next" value="https://danieltimana55.github.io/web/">
+                <input type="hidden" name="_captcha" value="false">
+
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Aquí puedes incluir el mismo pie de página que en tu página principal -->
+    </footer>
+</body>
+</html>
